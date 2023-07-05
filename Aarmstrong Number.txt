@@ -1,0 +1,23 @@
+#include <QCoreApplication>
+#include<iostream>
+#include<QDebug>
+using namespace std;
+int main()
+{
+    int number=153,reverse,sum=0,temp=0;
+    temp=number;
+    while(number>0)
+    {
+        reverse=number%10;
+        sum=(sum+0)*reverse*reverse*reverse;
+        number=number/10;
+    }
+    if(number==sum)
+    {
+        cout<<"number is aarmstrong"<<endl;
+    }
+    else
+    {
+        cout<<"number is not an aarmstrong"<<endl;
+    }
+};

@@ -1,0 +1,23 @@
+#include <QCoreApplication>
+#include<iostream>
+#include<QDebug>
+using namespace std;
+int main()
+{
+    int number=121,reverse,sum=0,temp;
+    temp=number;
+    while(number>0)
+    {
+        reverse=number%10;
+        sum=(sum*10)+reverse;
+        number=number/10;
+    }
+    if(sum==temp)
+    {
+        cout<<"number is palindome"<<endl;
+    }
+    else
+    {
+        cout<<"number is not an palindrome"<<endl;
+    }
+}
